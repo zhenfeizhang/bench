@@ -1,0 +1,17 @@
+[package]
+name = "bench"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ark-std = "0.4.0"
+ff = "0.13"
+halo2_proofs = { git = "https://github.com/scroll-tech/halo2.git", branch = "v1.1" }
+criterion = "0.5.0"
+
+
+[[bench]]
+name = "bench"
+harness = false
